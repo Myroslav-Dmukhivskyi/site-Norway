@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import "./header.css";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 1px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.contentContainer {
+  max-width: 1200px;
+}
+
+.jumbotron {
+  height: 1000px;
+  background: url("../assets/jumbotron.png") no-repeat 91.56% 0 / cover;
+}

@@ -1,0 +1,135 @@
+header {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 25px 0;
+  height: 100px;
+  transition: 0.3s;
+}
+
+header.fullHeight {
+  height: 100vh;
+  background: #232428;
+}
+
+.header__logo {
+  height: 30px;
+}
+
+.header__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header__burger {
+  height: 48px;
+  width: 40px;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  background: inherit;
+  outline: none;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 30px;
+  margin: 7px 0;
+  height: 2px;
+  border-radius: 2px;
+  background: #ffffff;
+  transition: 0.3s;
+}
+
+.header__burger:hover .bar1,
+.header__burger:hover .bar2,
+.header__burger:hover .bar3 {
+  background: #919193;
+}
+
+.header__burger.header__burger--opened .bar1 {
+  transform: translateY(4.5px) rotate(225deg);
+}
+
+.header__burger.header__burger--opened .bar2 {
+  position: absolute;
+  opacity: 0.2;
+  transform: translateY(7px);
+}
+
+.header__burger.header__burger--opened .bar3 {
+  transform: translateY(-4.5px) rotate(315deg);
+}
+
+.header__navBar {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  overflow: auto;
+}
+
+.header__navBar--show {
+  display: flex;
+  margin-top: 40px;
+}
+
+.header__navBar a {
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.header__navBar a:hover {
+  color: #d3d3d3;
+}
+
+.header__navBar a:last-child {
+  border: 2px solid #ffffff;
+  padding: 5px 15px;
+  transition: 0.3s;
+}
+
+.header__navBar a:last-child:hover {
+  color: #18191f;
+  border-color: #18191f;
+  background: #ffffff;
+}
+
+@media screen and (min-width: 1100px) {
+  .header__burger {
+    display: none;
+  }
+  .header__body {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .header__nav {
+    width: auto;
+  }
+  .header__navBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+  }
+  .header__navBar a {
+    margin: 0 0 0 20px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .header__body {
+    width: 100%;
+  }
+}
