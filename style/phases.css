@@ -1,0 +1,61 @@
+.phases {
+  background: url("../assets/man-and-sea.jpg") no-repeat 100% 0 / cover;
+  padding: 90px 0 150px;
+}
+.phases h3 {
+  font-size: 22px;
+  color: #232428;
+}
+.phases p {
+  color: #505155;
+  font-size: 14px;
+}
+.blocks-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.phase-block {
+  box-sizing: border-box;
+  background-color: var(--white);
+  flex-basis: 30%;
+  padding: 40px 20px;
+  margin-bottom: 30px;
+}
+.phase-block:nth-child(1) img {
+  margin-bottom: 22px;
+}
+
+.phase-block:nth-child(2) img {
+  margin-bottom: 30px;
+}
+
+.phase-block img {
+  width: 50%;
+}
+
+@media (min-width: 760px) {
+  .phases {
+    padding-bottom: 275px;
+  }
+  .blocks-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .phases p {
+    font-size: 14.5px;
+  }
+
+  .phases h3 {
+    font-size: 23px;
+  }
+}
+
+@media (min-width: 990px) {
+  .phases {
+    padding-bottom: 400px;
+  }
+  .phases p {
+    font-size: 15px;
+  }
+}

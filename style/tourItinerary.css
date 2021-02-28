@@ -1,0 +1,18 @@
+.content-tour {
+  background: url(../assets/gray-bg.png) no-repeat 50% 50% / cover;
+}
+
+.map-tour img {
+  display: block;
+  width: 100%;
+}
+.tour-itinerary-conteiner {
+  display: flex;
+  flex-direction: column;
+}
+.info-tour h2 {
+  color: var(--white);
+}
+.route-three img {
+  width: 40px;
+}

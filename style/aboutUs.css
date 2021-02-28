@@ -1,0 +1,55 @@
+.about-content {
+  padding: 90px 0 40px;
+  background-color: #ffffff;
+}
+
+.about-content h2 {
+  color: #6f7380;
+  text-align: left;
+}
+.about-content p {
+  margin: 0;
+  color: #505155;
+  font-size: 19px;
+  display: block;
+  text-align: left;
+  letter-spacing: 0 ;
+}
+.tour-content .thumbnail {
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 2.2rem;
+}
+.tour-content .thumbnail span {
+  color: #14a9ee;
+}
+
+@media (min-width: 760px) {
+    .about-content{
+        padding-top: 110px;
+    }
+  .tour-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .tour-content .thumbnail {
+    flex-basis: 45%;
+    font-size: 39.5px;
+    line-height: 3rem;
+  }
+  .right-half {
+    margin-top: -25px;
+    flex-basis: 50%;
+  }
+}
+
+@media (min-width:990px){
+    .about-content{
+        padding-top: 130px;
+    }
+    .about-content h2{
+        font-size: 14px;
+    }
+    .thumbnail{
+        font-size: 45px;
+}

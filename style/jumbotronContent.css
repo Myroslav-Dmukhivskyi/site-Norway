@@ -1,0 +1,56 @@
+.jumbotron-content {
+  padding: 90px 0;
+  color: #ffffff;
+}
+.headlines-container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.headlines-container h1 {
+  font-size: 70px;
+  margin: 0 0 20px;
+}
+.link-to-video {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.link-to-video img {
+  width: 14px;
+}
+.link-to-video a {
+  text-decoration: underline;
+}
+.info-next-trip img {
+  width: 100%;
+}
+@media (min-width: 760px) {
+  .description {
+    display: flex;
+    justify-content: space-between;
+  }
+  .link-to-video {
+    margin: 0;
+    align-items: flex-end;
+    flex-basis: 62%;
+  }
+  .info-next-trip {
+    flex-basis: 30%;
+  }
+  .headlines-container h1 {
+    font-size: 125px;
+  }
+}
+@media (min-width: 990px) {
+  .headlines-container h1 {
+    font-size: 180px;
+  }
+  .info-next-trip a:hover {
+    text-decoration: underline;
+  }
+  .info-next-trip {
+    font-size: 14px;
+  }
+}
+
+

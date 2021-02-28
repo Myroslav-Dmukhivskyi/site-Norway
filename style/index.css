@@ -1,6 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 @import "./header.css";
+@import "./jumbotronContent.css";
+@import "./aboutUs.css";
+@import "./phases.css";
+@import "./tourItinerary.css";
 
+:root {
+  --white: #ffffff;
+}
 body {
   margin: 0;
   padding: 0;
@@ -12,12 +19,21 @@ a {
   color: #ffffff;
   text-decoration: none;
 }
+h2 {
+  font-size: 13px;
+  margin: 0;
+  text-transform: uppercase;
+}
 
 .contentContainer {
+  margin: 0 auto;
+  width: 90%;
   max-width: 1200px;
+}
+.dash-red {
+  color: #ff0000;
 }
 
 .jumbotron {
-  height: 1000px;
   background: url("../assets/jumbotron.png") no-repeat 91.56% 0 / cover;
 }
