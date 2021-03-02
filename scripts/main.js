@@ -1,8 +1,4 @@
-// import eventHandlers from "./eventHandlers.js";
 
-//add listeners
-
-//
 (() => {
   const burgerButton = document.querySelector(".header__burger");
   const header = document.querySelector("header");
@@ -26,4 +22,30 @@
 
   burgerButton.addEventListener("click", handleBurgerClick);
   window.addEventListener("resize", handleResize);
+})();
+
+
+(() => {
+  const tabs = document.querySelectorAll(".towns-tabs li");
+  const tabPanes = document.querySelectorAll(".tab-pane");
+
+  function handleTabClick(event) {
+    for (const tab of tabs) {
+      tab.classList.remove("active");
+    }
+
+    event.target.closest("li").classList.add("active");
+
+    for (const tabPane of tabPanes) {
+      if (tabPane.id === event.target.getAttribute("href").slice(1)) {
+        tabPane.classList.add("active");
+      } else {
+        tabPane.classList.remove("active");
+      }
+    }
+  }
+
+  for (const tab of tabs) {
+    tab.addEventListener("click", handleTabClick);
+  }
 })();

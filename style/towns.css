@@ -1,0 +1,53 @@
+.towns-tabs {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  border-bottom: 1px solid #808080;
+}
+
+.towns-tabs li {
+  padding: 15px 20px;
+  color: #808080;
+}
+
+.towns-tabs li:hover {
+  color: #000000;
+}
+
+.towns-tabs li.active {
+  color: #000000;
+  border-bottom: 2px solid red;
+}
+
+.towns-tabs a {
+  color: inherit;
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+.tab-foto {
+  flex-basis: 50%;
+}
+.tab-foto img {
+  width: 100%;
+}
+.tab-container {
+  flex-basis: 50%;
+  text-align: center;
+}
+.tab-pane.active {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 760px) {
+  .tab-pane.active {
+    flex-direction: row;
+  }
+}

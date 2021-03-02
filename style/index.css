@@ -4,6 +4,9 @@
 @import "./aboutUs.css";
 @import "./phases.css";
 @import "./tourItinerary.css";
+@import"./towns.css";
+@import "./contactUs.css";
+@import "./footer.css";
 
 :root {
   --white: #ffffff;

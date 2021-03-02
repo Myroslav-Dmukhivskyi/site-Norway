@@ -1,7 +1,17 @@
 .content-tour {
   background: url(../assets/gray-bg.png) no-repeat 50% 50% / cover;
 }
-
+.content-tour h4 {
+  color: var(--white);
+  margin: 0;
+}
+.content-tour p {
+  color: #a9a9a9;
+  margin: 0;
+}
+.map-tour {
+  flex-basis: 45%;
+}
 .map-tour img {
   display: block;
   width: 100%;
@@ -9,10 +19,49 @@
 .tour-itinerary-conteiner {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+.info-tour {
+  flex-basis: 45%;
 }
 .info-tour h2 {
+  color: #ffffff99;
+  font-size: inherit;
+}
+.content-oslo-tromso p {
+  padding: 20px 0 15px;
+  font-size: 17px;
+  color: #505155;
+}
+.content-oslo-tromso h3 {
+  color: #505155;
+  font-size: 34px;
+  font-weight: 600;
+}
+.content-oslo-tromso h3 span {
   color: var(--white);
 }
-.route-three img {
-  width: 40px;
+.route-three {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.route-icon-bg {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  overflow: hidden;
+
+}
+.condition-text h4,
+.condition-text p{
+  font-size: 13px;
+}
+
+
+@media (min-width: 760px) {
+  .tour-itinerary-conteiner {
+    display: flex;
+    flex-direction: row;
+  }
 }
